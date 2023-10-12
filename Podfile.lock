@@ -1,0 +1,16 @@
+PODS:
+  - HorizontalCalendarView (0.0.3)
+
+DEPENDENCIES:
+  - HorizontalCalendarView
+
+SPEC REPOS:
+  trunk:
+    - HorizontalCalendarView
+
+SPEC CHECKSUMS:
+  HorizontalCalendarView: 47aac833769be1a9ef5f7fb9a65997e8a5fed2aa
+
+PODFILE CHECKSUM: 9b2f9427d984bb5f5830c5c05538fd5264884c3f
+
+COCOAPODS: 1.11.3

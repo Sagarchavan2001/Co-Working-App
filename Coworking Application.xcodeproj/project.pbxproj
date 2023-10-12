@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69D510BE70AB09E6D43F1CB6 /* Pods_Coworking_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FCA3ACACA5F14D07A6194E /* Pods_Coworking_Application.framework */; };
+		783DD9C52AD519A8009AE4AD /* timeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DD9C32AD519A8009AE4AD /* timeCollectionViewCell.swift */; };
+		783DD9C62AD519A8009AE4AD /* timeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783DD9C42AD519A8009AE4AD /* timeCollectionViewCell.xib */; };
+		783DD9CA2AD51C39009AE4AD /* slotsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DD9C92AD51C39009AE4AD /* slotsModal.swift */; };
+		783DD9CC2AD51D46009AE4AD /* slotsViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DD9CB2AD51D46009AE4AD /* slotsViewModal.swift */; };
+		783DD9CE2AD51E61009AE4AD /* DeskApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783DD9CD2AD51E61009AE4AD /* DeskApiManager.swift */; };
+		788D3C0B2AD160F800442663 /* Availableconstat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C0A2AD160F800442663 /* Availableconstat.swift */; };
+		788D3C0D2AD1611100442663 /* deskConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C0C2AD1611100442663 /* deskConstant.swift */; };
+		788D3C0F2AD1619200442663 /* AvailabilityApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C0E2AD1619200442663 /* AvailabilityApiManager.swift */; };
+		788D3C112AD1633900442663 /* AvailableModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C102AD1633900442663 /* AvailableModal.swift */; };
+		788D3C132AD1661400442663 /* AvailableViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C122AD1661400442663 /* AvailableViewModal.swift */; };
+		788D3C162AD16B9000442663 /* AvailabilityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D3C142AD16B9000442663 /* AvailabilityCollectionViewCell.swift */; };
+		788D3C172AD16B9000442663 /* AvailabilityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788D3C152AD16B9000442663 /* AvailabilityCollectionViewCell.xib */; };
+		78C70EAA2AD4488B00E2B879 /* calenderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C70EA82AD4488B00E2B879 /* calenderCollectionViewCell.swift */; };
+		78C70EAB2AD4488B00E2B879 /* calenderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78C70EA92AD4488B00E2B879 /* calenderCollectionViewCell.xib */; };
+		78E643D82AD1014A00B02578 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E643D72AD1014A00B02578 /* AppDelegate.swift */; };
+		78E643DA2AD1014A00B02578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E643D92AD1014A00B02578 /* SceneDelegate.swift */; };
+		78E643DF2AD1014A00B02578 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E643DD2AD1014A00B02578 /* Main.storyboard */; };
+		78E643E12AD1014D00B02578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E643E02AD1014D00B02578 /* Assets.xcassets */; };
+		78E643E42AD1014D00B02578 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E643E22AD1014D00B02578 /* LaunchScreen.storyboard */; };
+		78E644012AD1189C00B02578 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644002AD1189C00B02578 /* CreateAccountViewController.swift */; };
+		78E644032AD118B300B02578 /* CreateAccountViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644022AD118B300B02578 /* CreateAccountViewModal.swift */; };
+		78E6440A2AD11D0500B02578 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644092AD11D0500B02578 /* LoginViewController.swift */; };
+		78E6440E2AD1256200B02578 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6440D2AD1256200B02578 /* HomeViewController.swift */; };
+		78E644132AD1269800B02578 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644122AD1269800B02578 /* BookingViewController.swift */; };
+		78E644162AD1273500B02578 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644142AD1273500B02578 /* BookingTableViewCell.swift */; };
+		78E644172AD1273500B02578 /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E644152AD1273500B02578 /* BookingTableViewCell.xib */; };
+		78E6441D2AD12A6C00B02578 /* bookingConstat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6441C2AD12A6C00B02578 /* bookingConstat.swift */; };
+		78E6441F2AD12B2600B02578 /* BookingApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6441E2AD12B2600B02578 /* BookingApiManager.swift */; };
+		78E644212AD12B8A00B02578 /* bookingModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644202AD12B8A00B02578 /* bookingModal.swift */; };
+		78E644232AD12F4300B02578 /* bookingViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644222AD12F4300B02578 /* bookingViewModal.swift */; };
+		78E644292AD1405200B02578 /* loginConstat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644282AD1405200B02578 /* loginConstat.swift */; };
+		78E6442D2AD147C600B02578 /* loginApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6442C2AD147C600B02578 /* loginApiManager.swift */; };
+		78E6442F2AD1487C00B02578 /* createAccountApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6442E2AD1487C00B02578 /* createAccountApiManager.swift */; };
+		78E644312AD148D500B02578 /* createAccountConstat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644302AD148D500B02578 /* createAccountConstat.swift */; };
+		78E644362AD14DCE00B02578 /* desk1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E644352AD14DCE00B02578 /* desk1ViewController.swift */; };
+		78E6443B2AD15BA800B02578 /* AvailableDesksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E6443A2AD15BA800B02578 /* AvailableDesksViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19FCA3ACACA5F14D07A6194E /* Pods_Coworking_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coworking_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783DD9C32AD519A8009AE4AD /* timeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeCollectionViewCell.swift; sourceTree = "<group>"; };
+		783DD9C42AD519A8009AE4AD /* timeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = timeCollectionViewCell.xib; sourceTree = "<group>"; };
+		783DD9C92AD51C39009AE4AD /* slotsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slotsModal.swift; sourceTree = "<group>"; };
+		783DD9CB2AD51D46009AE4AD /* slotsViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = slotsViewModal.swift; sourceTree = "<group>"; };
+		783DD9CD2AD51E61009AE4AD /* DeskApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskApiManager.swift; sourceTree = "<group>"; };
+		788D3C0A2AD160F800442663 /* Availableconstat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Availableconstat.swift; sourceTree = "<group>"; };
+		788D3C0C2AD1611100442663 /* deskConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deskConstant.swift; sourceTree = "<group>"; };
+		788D3C0E2AD1619200442663 /* AvailabilityApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityApiManager.swift; sourceTree = "<group>"; };
+		788D3C102AD1633900442663 /* AvailableModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableModal.swift; sourceTree = "<group>"; };
+		788D3C122AD1661400442663 /* AvailableViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableViewModal.swift; sourceTree = "<group>"; };
+		788D3C142AD16B9000442663 /* AvailabilityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityCollectionViewCell.swift; sourceTree = "<group>"; };
+		788D3C152AD16B9000442663 /* AvailabilityCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailabilityCollectionViewCell.xib; sourceTree = "<group>"; };
+		78C70EA82AD4488B00E2B879 /* calenderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calenderCollectionViewCell.swift; sourceTree = "<group>"; };
+		78C70EA92AD4488B00E2B879 /* calenderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = calenderCollectionViewCell.xib; sourceTree = "<group>"; };
+		78E643D42AD1014A00B02578 /* Coworking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coworking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E643D72AD1014A00B02578 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78E643D92AD1014A00B02578 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78E643DE2AD1014A00B02578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78E643E02AD1014D00B02578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78E643E32AD1014D00B02578 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78E643E52AD1014D00B02578 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E644002AD1189C00B02578 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		78E644022AD118B300B02578 /* CreateAccountViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModal.swift; sourceTree = "<group>"; };
+		78E644092AD11D0500B02578 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78E6440D2AD1256200B02578 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		78E644122AD1269800B02578 /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		78E644142AD1273500B02578 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		78E644152AD1273500B02578 /* BookingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		78E6441C2AD12A6C00B02578 /* bookingConstat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookingConstat.swift; sourceTree = "<group>"; };
+		78E6441E2AD12B2600B02578 /* BookingApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingApiManager.swift; sourceTree = "<group>"; };
+		78E644202AD12B8A00B02578 /* bookingModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookingModal.swift; sourceTree = "<group>"; };
+		78E644222AD12F4300B02578 /* bookingViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookingViewModal.swift; sourceTree = "<group>"; };
+		78E644282AD1405200B02578 /* loginConstat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginConstat.swift; sourceTree = "<group>"; };
+		78E6442C2AD147C600B02578 /* loginApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginApiManager.swift; sourceTree = "<group>"; };
+		78E6442E2AD1487C00B02578 /* createAccountApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountApiManager.swift; sourceTree = "<group>"; };
+		78E644302AD148D500B02578 /* createAccountConstat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountConstat.swift; sourceTree = "<group>"; };
+		78E644352AD14DCE00B02578 /* desk1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desk1ViewController.swift; sourceTree = "<group>"; };
+		78E6443A2AD15BA800B02578 /* AvailableDesksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDesksViewController.swift; sourceTree = "<group>"; };
+		B8E6D353677FBC453FD2C847 /* Pods-Coworking Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coworking Application.debug.xcconfig"; path = "Target Support Files/Pods-Coworking Application/Pods-Coworking Application.debug.xcconfig"; sourceTree = "<group>"; };
+		BD23B449F3AD3578D231D0C4 /* Pods-Coworking Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coworking Application.release.xcconfig"; path = "Target Support Files/Pods-Coworking Application/Pods-Coworking Application.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78E643D12AD1014A00B02578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D510BE70AB09E6D43F1CB6 /* Pods_Coworking_Application.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		748C2FC57F149AB775127263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8E6D353677FBC453FD2C847 /* Pods-Coworking Application.debug.xcconfig */,
+				BD23B449F3AD3578D231D0C4 /* Pods-Coworking Application.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		783DD9C72AD51BC3009AE4AD /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				78E644352AD14DCE00B02578 /* desk1ViewController.swift */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		783DD9C82AD51BC7009AE4AD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				78C70EA82AD4488B00E2B879 /* calenderCollectionViewCell.swift */,
+				78C70EA92AD4488B00E2B879 /* calenderCollectionViewCell.xib */,
+				783DD9C32AD519A8009AE4AD /* timeCollectionViewCell.swift */,
+				783DD9C42AD519A8009AE4AD /* timeCollectionViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		78E643CB2AD1014A00B02578 = {
+			isa = PBXGroup;
+			children = (
+				78E643D62AD1014A00B02578 /* Coworking Application */,
+				78E643D52AD1014A00B02578 /* Products */,
+				748C2FC57F149AB775127263 /* Pods */,
+				F869DE2616C28883D5DA7C48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		78E643D52AD1014A00B02578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E643D42AD1014A00B02578 /* Coworking Application.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78E643D62AD1014A00B02578 /* Coworking Application */ = {
+			isa = PBXGroup;
+			children = (
+				78E643F22AD114F000B02578 /* Application */,
+				78E643F12AD114ED00B02578 /* Constat */,
+				78E643F92AD1159900B02578 /* ApiManger */,
+				78E643EF2AD114E700B02578 /* Screens */,
+				78E643EC2AD114DD00B02578 /* createAccount */,
+				78E643EB2AD114D900B02578 /* Login */,
+				78E643F32AD1157E00B02578 /* HomeScreen */,
+				78E643F52AD1158400B02578 /* Desk1 */,
+				78E643F42AD1158100B02578 /* AvailabelDesk */,
+				78E643F72AD1158B00B02578 /* Booking */,
+				78E643ED2AD114E000B02578 /* resources */,
+				78E643E52AD1014D00B02578 /* Info.plist */,
+			);
+			path = "Coworking Application";
+			sourceTree = "<group>";
+		};
+		78E643EB2AD114D900B02578 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78E644082AD1191500B02578 /* LoginModal */,
+				78E644072AD1191200B02578 /* LoginView */,
+				78E644062AD1190D00B02578 /* LoginViewModal */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		78E643EC2AD114DD00B02578 /* createAccount */ = {
+			isa = PBXGroup;
+			children = (
+				78E643FD2AD1181E00B02578 /* modal */,
+				78E643FC2AD1181A00B02578 /* View */,
+				78E643FB2AD1181700B02578 /* ViewModal */,
+			);
+			path = createAccount;
+			sourceTree = "<group>";
+		};
+		78E643ED2AD114E000B02578 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				78E643E02AD1014D00B02578 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		78E643EF2AD114E700B02578 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				78E643DD2AD1014A00B02578 /* Main.storyboard */,
+				78E643E22AD1014D00B02578 /* LaunchScreen.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		78E643F12AD114ED00B02578 /* Constat */ = {
+			isa = PBXGroup;
+			children = (
+				78E644302AD148D500B02578 /* createAccountConstat.swift */,
+				78E644282AD1405200B02578 /* loginConstat.swift */,
+				788D3C0C2AD1611100442663 /* deskConstant.swift */,
+				788D3C0A2AD160F800442663 /* Availableconstat.swift */,
+				78E6441C2AD12A6C00B02578 /* bookingConstat.swift */,
+			);
+			path = Constat;
+			sourceTree = "<group>";
+		};
+		78E643F22AD114F000B02578 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				78E643D72AD1014A00B02578 /* AppDelegate.swift */,
+				78E643D92AD1014A00B02578 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		78E643F32AD1157E00B02578 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				78E6440D2AD1256200B02578 /* HomeViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		78E643F42AD1158100B02578 /* AvailabelDesk */ = {
+			isa = PBXGroup;
+			children = (
+				78E644392AD15B5200B02578 /* Modal */,
+				78E644382AD15B4E00B02578 /* View */,
+				78E644372AD15B4A00B02578 /* viewModal */,
+			);
+			path = AvailabelDesk;
+			sourceTree = "<group>";
+		};
+		78E643F52AD1158400B02578 /* Desk1 */ = {
+			isa = PBXGroup;
+			children = (
+				78E644342AD14D5600B02578 /* modal */,
+				78E644322AD14D4200B02578 /* view */,
+				78E644332AD14D5100B02578 /* viewModal */,
+			);
+			path = Desk1;
+			sourceTree = "<group>";
+		};
+		78E643F72AD1158B00B02578 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				78E644112AD1265400B02578 /* modal */,
+				78E644102AD1265100B02578 /* view */,
+				78E6440F2AD1264D00B02578 /* ViewModal */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		78E643F92AD1159900B02578 /* ApiManger */ = {
+			isa = PBXGroup;
+			children = (
+				78E6442E2AD1487C00B02578 /* createAccountApiManager.swift */,
+				78E6442C2AD147C600B02578 /* loginApiManager.swift */,
+				783DD9CD2AD51E61009AE4AD /* DeskApiManager.swift */,
+				788D3C0E2AD1619200442663 /* AvailabilityApiManager.swift */,
+				78E6441E2AD12B2600B02578 /* BookingApiManager.swift */,
+			);
+			path = ApiManger;
+			sourceTree = "<group>";
+		};
+		78E643FB2AD1181700B02578 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				78E644022AD118B300B02578 /* CreateAccountViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		78E643FC2AD1181A00B02578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78E644002AD1189C00B02578 /* CreateAccountViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78E643FD2AD1181E00B02578 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		78E644062AD1190D00B02578 /* LoginViewModal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginViewModal;
+			sourceTree = "<group>";
+		};
+		78E644072AD1191200B02578 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				78E644092AD11D0500B02578 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		78E644082AD1191500B02578 /* LoginModal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginModal;
+			sourceTree = "<group>";
+		};
+		78E6440F2AD1264D00B02578 /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				78E644222AD12F4300B02578 /* bookingViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		78E644102AD1265100B02578 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				78E644122AD1269800B02578 /* BookingViewController.swift */,
+				78E644142AD1273500B02578 /* BookingTableViewCell.swift */,
+				78E644152AD1273500B02578 /* BookingTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78E644112AD1265400B02578 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				78E644202AD12B8A00B02578 /* bookingModal.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		78E644322AD14D4200B02578 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				783DD9C82AD51BC7009AE4AD /* cell */,
+				783DD9C72AD51BC3009AE4AD /* viewController */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78E644332AD14D5100B02578 /* viewModal */ = {
+			isa = PBXGroup;
+			children = (
+				783DD9CB2AD51D46009AE4AD /* slotsViewModal.swift */,
+			);
+			path = viewModal;
+			sourceTree = "<group>";
+		};
+		78E644342AD14D5600B02578 /* modal */ = {
+			isa = PBXGroup;
+			children = (
+				783DD9C92AD51C39009AE4AD /* slotsModal.swift */,
+			);
+			path = modal;
+			sourceTree = "<group>";
+		};
+		78E644372AD15B4A00B02578 /* viewModal */ = {
+			isa = PBXGroup;
+			children = (
+				788D3C122AD1661400442663 /* AvailableViewModal.swift */,
+			);
+			path = viewModal;
+			sourceTree = "<group>";
+		};
+		78E644382AD15B4E00B02578 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78E6443A2AD15BA800B02578 /* AvailableDesksViewController.swift */,
+				788D3C142AD16B9000442663 /* AvailabilityCollectionViewCell.swift */,
+				788D3C152AD16B9000442663 /* AvailabilityCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78E644392AD15B5200B02578 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				788D3C102AD1633900442663 /* AvailableModal.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		F869DE2616C28883D5DA7C48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19FCA3ACACA5F14D07A6194E /* Pods_Coworking_Application.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78E643D32AD1014A00B02578 /* Coworking Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E643E82AD1014D00B02578 /* Build configuration list for PBXNativeTarget "Coworking Application" */;
+			buildPhases = (
+				E638A87F6FF7191433EFBA54 /* [CP] Check Pods Manifest.lock */,
+				78E643D02AD1014A00B02578 /* Sources */,
+				78E643D12AD1014A00B02578 /* Frameworks */,
+				78E643D22AD1014A00B02578 /* Resources */,
+				6D9C4C5DCC8220F0BD6F1477 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coworking Application";
+			productName = "Coworking Application";
+			productReference = 78E643D42AD1014A00B02578 /* Coworking Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E643CC2AD1014A00B02578 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					78E643D32AD1014A00B02578 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 78E643CF2AD1014A00B02578 /* Build configuration list for PBXProject "Coworking Application" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78E643CB2AD1014A00B02578;
+			productRefGroup = 78E643D52AD1014A00B02578 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E643D32AD1014A00B02578 /* Coworking Application */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E643D22AD1014A00B02578 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788D3C172AD16B9000442663 /* AvailabilityCollectionViewCell.xib in Resources */,
+				78E643E42AD1014D00B02578 /* LaunchScreen.storyboard in Resources */,
+				78C70EAB2AD4488B00E2B879 /* calenderCollectionViewCell.xib in Resources */,
+				78E644172AD1273500B02578 /* BookingTableViewCell.xib in Resources */,
+				78E643E12AD1014D00B02578 /* Assets.xcassets in Resources */,
+				783DD9C62AD519A8009AE4AD /* timeCollectionViewCell.xib in Resources */,
+				78E643DF2AD1014A00B02578 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D9C4C5DCC8220F0BD6F1477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coworking Application/Pods-Coworking Application-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coworking Application/Pods-Coworking Application-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coworking Application/Pods-Coworking Application-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E638A87F6FF7191433EFBA54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coworking Application-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78E643D02AD1014A00B02578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E6441D2AD12A6C00B02578 /* bookingConstat.swift in Sources */,
+				78E6440A2AD11D0500B02578 /* LoginViewController.swift in Sources */,
+				78E644312AD148D500B02578 /* createAccountConstat.swift in Sources */,
+				78E644032AD118B300B02578 /* CreateAccountViewModal.swift in Sources */,
+				78E644012AD1189C00B02578 /* CreateAccountViewController.swift in Sources */,
+				788D3C0F2AD1619200442663 /* AvailabilityApiManager.swift in Sources */,
+				78E643D82AD1014A00B02578 /* AppDelegate.swift in Sources */,
+				78E643DA2AD1014A00B02578 /* SceneDelegate.swift in Sources */,
+				78E6440E2AD1256200B02578 /* HomeViewController.swift in Sources */,
+				788D3C112AD1633900442663 /* AvailableModal.swift in Sources */,
+				78C70EAA2AD4488B00E2B879 /* calenderCollectionViewCell.swift in Sources */,
+				783DD9CE2AD51E61009AE4AD /* DeskApiManager.swift in Sources */,
+				78E644212AD12B8A00B02578 /* bookingModal.swift in Sources */,
+				78E644232AD12F4300B02578 /* bookingViewModal.swift in Sources */,
+				788D3C0B2AD160F800442663 /* Availableconstat.swift in Sources */,
+				783DD9C52AD519A8009AE4AD /* timeCollectionViewCell.swift in Sources */,
+				78E644132AD1269800B02578 /* BookingViewController.swift in Sources */,
+				78E644162AD1273500B02578 /* BookingTableViewCell.swift in Sources */,
+				78E644362AD14DCE00B02578 /* desk1ViewController.swift in Sources */,
+				78E6442D2AD147C600B02578 /* loginApiManager.swift in Sources */,
+				78E644292AD1405200B02578 /* loginConstat.swift in Sources */,
+				783DD9CC2AD51D46009AE4AD /* slotsViewModal.swift in Sources */,
+				783DD9CA2AD51C39009AE4AD /* slotsModal.swift in Sources */,
+				78E6442F2AD1487C00B02578 /* createAccountApiManager.swift in Sources */,
+				788D3C132AD1661400442663 /* AvailableViewModal.swift in Sources */,
+				788D3C0D2AD1611100442663 /* deskConstant.swift in Sources */,
+				78E6441F2AD12B2600B02578 /* BookingApiManager.swift in Sources */,
+				78E6443B2AD15BA800B02578 /* AvailableDesksViewController.swift in Sources */,
+				788D3C162AD16B9000442663 /* AvailabilityCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78E643DD2AD1014A00B02578 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78E643DE2AD1014A00B02578 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78E643E22AD1014D00B02578 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78E643E32AD1014D00B02578 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78E643E62AD1014D00B02578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78E643E72AD1014D00B02578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78E643E92AD1014D00B02578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E6D353677FBC453FD2C847 /* Pods-Coworking Application.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coworking Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Coworking-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E643EA2AD1014D00B02578 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD23B449F3AD3578D231D0C4 /* Pods-Coworking Application.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coworking Application/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.google.Coworking-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78E643CF2AD1014A00B02578 /* Build configuration list for PBXProject "Coworking Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E643E62AD1014D00B02578 /* Debug */,
+				78E643E72AD1014D00B02578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E643E82AD1014D00B02578 /* Build configuration list for PBXNativeTarget "Coworking Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E643E92AD1014D00B02578 /* Debug */,
+				78E643EA2AD1014D00B02578 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78E643CC2AD1014A00B02578 /* Project object */;
+}
